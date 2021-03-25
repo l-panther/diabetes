@@ -28,7 +28,6 @@ There is no configuration needed to run this web application.
 Notes
 -----
 This website is an example of my front-end and back-end web development capabilities. 
-For more information about the development of this project, read the Development Plan for Diabetes.
 
 Credit
 ------

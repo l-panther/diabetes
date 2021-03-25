@@ -4,7 +4,7 @@ $(document).ready(function() {
 		
     // ================================= CHANGE TO LIGHTGREY AND  ITALIC
 	function greyItalic(id) {
-		$(id).css('color', 'lightgrey'); // Set font color 
+		$(id).css('color', '#adadad'); // Set font color 
         $(id).css('font-style', 'italic'); // Set font style 
 	}
 	
@@ -16,7 +16,7 @@ $(document).ready(function() {
 	
 	// ================================= CHANGE BORDER BLACK
 	function borderBlack(id) { 
-		$(id).css("border", "2px solid #3f3f3f");
+		$(id).css("border", "1px solid #3f3f3f");
 	}
 	
 	// ================================= CHANGE BORDER GREY
@@ -26,7 +26,7 @@ $(document).ready(function() {
 	
 	// ================================= CHANGE BORDER RED
 	function borderRed(id) { 
-		$(id).css("border", "2px solid #b20000");
+		$(id).css("border", "1px solid #b20000");
 	}
 	
 	// ================================= ADD ERRORS 
@@ -82,7 +82,7 @@ $(document).ready(function() {
         // Return true
         // First name is arguement
         var fnameRegEx = /^[a-zA-Z]*$/; // Reg expression variable
-        if((firstname == "Enter your first name") || (firstname == "")) {
+        if((firstname == "First name") || (firstname == "")) {
             addError("#error-fname", "* First name is required");
             return false;
         } 
@@ -124,7 +124,7 @@ $(document).ready(function() {
         // Return true
         // Health is arguement
         var healthRegEx = /^(ZHA)+[0-9]{6}/; // Create variable
-        if((health == "Enter your ZHA number") || (health === "")) {
+        if((health == "ZHA health number") || (health === "")) {
             addError("#error-health", "* Health is required");
             return false; // Set allowsubmit t0 false
         } else {
@@ -192,7 +192,7 @@ $(document).ready(function() {
     });
 
     // 2. First name field
-    var fnameTxt = "Enter your first name"; // String variable
+    var fnameTxt = "First name"; // String variable
     var fname = $("#fname"); // Create variable
     fname.val(fnameTxt); // Set value
    	greyItalic(fname); // Set styling
@@ -241,10 +241,10 @@ $(document).ready(function() {
     });
 
     // 4. Health field
-    var healthTxt = "Enter your ZHA number"; // String variable
+    var healthTxt = "ZHA health number"; // String variable
     var health = $("#health"); // Create variable
     health.val(healthTxt); // Set value
-    health.css('color', 'lightgrey'); // Set font color 
+    health.css('color', '#adadad'); // Set font color 
     health.css('font-style', 'italic'); // Set font style 
     health.focus(function() { // On focus remove hint ***
 		borderBlack(health);
