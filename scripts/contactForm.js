@@ -66,7 +66,7 @@ $(document).ready(function() {
         // Else if title not equal string, add error, return false
         // Return true
         // Title is arguement
-        if((title == "Select your title") || (title == "")) {
+        if((title == "Select your title") || (title == "0")) {
 			addError("#error-title", "* Title is required");
             return false;
 		} else if (!title == "Mr" || !title == "Ms" || !title == "Mrs" || !title == "Miss" || !title == "Master") { // If title field does not have [string], display error message
