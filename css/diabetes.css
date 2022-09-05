@@ -3,7 +3,8 @@
 	By Leroy Russell
 */
 /* -------------------------------- IMPORT FONTS -------------------------------- */
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Carter+One");
 
 /* -------------------------------- IMPORT FONTS -------------------------------- */
@@ -63,8 +64,7 @@ header,
 footer,
 nav,
 aside,
-main,
-primarynav {
+main {
   display: block;
   background: none;
   width: 100%;
@@ -126,11 +126,12 @@ html {
 }
 
 body {
-  font-family: Verdana, cambria, Geneva;
+  font-family: Geneva, Verdana !important;
+  font-weight: 500;
   background: #fff;
   width: 100%;
-  font-size: 16px !important;
-  letter-spacing: 2px;
+  font-size: 16px;
+  letter-spacing: 1px;
   color: #3f3f3f;
   line-height: 1.6;
   background: #eee;
@@ -158,7 +159,7 @@ header, .navbar { background: #000 !important; }
 
 button { border: none !important; }
 
-button i { font-size: 30px !important; }
+button i { font-size: 26px !important; }
 
 /* Primary navigation link, Mini navigation link, */
 .navbar-nav a {
@@ -167,11 +168,13 @@ button i { font-size: 30px !important; }
 
 .navbar a { 
 	font-size: 15px;
-	font-weight: 600 !important; }
+	font-weight: 500 !important; }
 
 /* --------------------------- * Headers * ------------------------- */
+h1, h2, h3 { font-family: "Source Sans Pro";}
+
 h1 {
-  font-weight: bold;
+  font-weight: bolder;
 }
  
 h2 {
@@ -279,7 +282,8 @@ footer #copyright {
 	text-align: left !important; }
 
 .banner p { 
-	margin-top: 10px; }
+	margin-top: 10px;
+  font-weight: bold; }
 
 .banner .banner-img { 
 	padding-top: 30px;
@@ -290,34 +294,36 @@ footer #copyright {
 }
 
 #bannerBtn { 
-  background: #fff;
-  color: #3f3f3f;
-  width: 180px !important;  
   font-size: 0.9em;
-  padding: 10px; }
+  width: 180px !important;
+  padding: 10px;
+  background: #a60000;
+  color: #fff; }
 
 #bannerBtn:hover { 
-  background: #a60000;
-  color: #fff;
-  box-shadow: 0px 0px 5px 0px #000; }
+  background: #fff;
+  color: #3f3f3f;
+  box-shadow: 0px 0px 3px 0px #000;
+}
 
 /* ----- -------------------- Index ------------------- */
 .section { padding-top: 60px; }
 
 #about { 
+  background: #fff;
 	padding: 50px 30px;
 	border-radius: 30px; 
 	box-shadow: 0px 0px 10px 0px #adadad;
 	margin: -80px 20px 0px 20px; }
 
-#about img { width: 200px; }
+#about img { width: 40%; }
 
 #diabetes .desc { float: right; }
 
-#diabetes img { width: 250px; }
+#diabetes img { width: 50%; }
 
 #about img, #diabetes img {
-	margin-top: 40px;
+	margin-top: 30px;
 }
 
 #doctors { 
@@ -339,31 +345,28 @@ footer #copyright {
 #doctors img { 
 	border-radius: 100%;
 	background: #fff;
-	margin-top: -80px;
+	margin-top: -50px;
 	margin-bottom: 50px;
-	width: 120px; }
+	width: 100px; }
 
 #doctors p { margin-bottom: 30px; }
 
+/* BMI Container */
 #bmiModal {
 	background: rgb(0, 0, 0, 0.4);
 }
 
-.modal-content {
-	border-radius: 10px !important;
-}
-
-.modal-body {
-	padding-top: 0px;
-}
-
-/* BMI Container */
 #bmi-container {
   background: #fff;
   width: 100%;
   margin: auto;
 }
 
+body:not(#bmiModal) { padding-right: 0px !important; }
+
+.modal header h2 {
+	padding: 20px 0px !important;
+}
 .modal-header {
   padding: 20px !important;
   background: url("../images/main/modalheader.png") no-repeat;
@@ -374,20 +377,21 @@ footer #copyright {
 .modal-content {
   margin-top: 30px;
   border: 1px solid #141414;
-  overflow: hidden
+  overflow: hidden;
+  border-radius: 5px !important;
 }
 
-.modal-body {
-  padding: 0px;
-}
+.modal-body { padding: 0px; }
 
 .modal h2 {
   padding-top: 0px;
   margin: 0px;
+  font-weight: 500;
+  font-size: 1.2em;
 }
 
 .modal-body h2 {
-  padding-top: 30px;
+  font-weight: bold;
 }
 
 .modal-header h2, .modal .close {
@@ -400,8 +404,14 @@ footer #copyright {
   padding: 10px !important;
 }
 
+.modal i {
+  font-size: 20px !important;
+  font-weight: 100 !important;
+}
+
 .bmi-tool { 
-	padding-top: 0px !important;}
+	padding-top: 0px !important;
+	padding-bottom: 20px !important;}
 
 #bmi-tool label { 
 	border: none !important;
@@ -419,9 +429,9 @@ footer #copyright {
 }
 
 .question h3 {
-  margin-top: 20px;
-  font-size: 1.2em !important;
-  font-weight: 500;
+  padding-top: 20px;
+  font-size: 1.3em !important;
+  font-weight: 600;
 }
 
 /* Questions */
@@ -445,8 +455,6 @@ footer #copyright {
   padding: 5px 0px 10px 0px;
   border: 1px solid #141414;
   border-radius: 3px;
-  margin-top: 50px;
-  margin-bottom: 50px;
   width: 100%;
   margin: auto;
   color: #fff;
@@ -457,7 +465,7 @@ footer #copyright {
 #endBtn:hover,
 .calculate:hover,
 #send:hover {
-  box-shadow: 0px 0px 3px 0px #000;
+  box-shadow: 0px 0px 2px 0px #000;
   color: #fff;
   cursor: pointer;
 }
@@ -566,7 +574,7 @@ form h2, form h3 {
 /* Title */
 #title {
   margin-top: 20px;
-  margin-bottom: 30px !important;
+  margin-bottom: 10px !important;
   width: 250px;
   font-size: 1em;
 }
@@ -592,6 +600,11 @@ form h2, form h3 {
 #contact-form .w3-input {
   border-radius: 3px;
   border: 1px solid lightgrey;
+}
+
+#contact-form input:focus, #contact-form .w3-input:focus {
+  border-bottom: 4px solid lightgrey !important;
+  box-shadow: none !important;
 }
 
 /* Submit Button  */
@@ -621,8 +634,7 @@ form h2, form h3 {
 /* ------------------------- Errors ---------------------- */
 /* Error */
 .error {
-  font-size: 0.8em;
-  font-style: italic;
+  font-size: 0.95em;
   color: #b20000;
   padding-top: 5px;
   display: none;
@@ -639,13 +651,17 @@ form h2, form h3 {
 
 /* ------------------------- MEDIA QUERIES ---------------------- */
 
+@media only screen and (min-width: 600px) {
+	#about img {
+		width: 60%; 
+	}
+}
+
 @media only screen and (min-width: 800px) {
-	/* Body */
-	body {
-		font-size: 18px !important;
-		}
 
 	.navbar-collapse { margin-top: 20px; }
+
+  button i { font-size: 30px !important; }
 
 	.banner { 
 		height: 500px;
@@ -665,30 +681,33 @@ form h2, form h3 {
 
 	#diabetes img {
 		margin-top: 30px;
+    width: 70%; 
 		}
 
-	#about img, #diabetes img {
-		margin-top: 10px;
-		width: 200px; 
+	#about img {
+    margin-top: 0px;
+		width: 50%; 
 	}
 
 	.explained .desc {
 		float: right !important;
 	}
 
+  .doctor { padding: 0px 20px;}
+
 }
 
 @media only screen and (min-width: 991px) {
- 	/* Body */
- 	body { font-size: 20px !important; }
-	
+  
  	.navbar-collapse { 
 		margin-top: 0px; 
 		justify-content: flex-end; }	
 	
  	.banner { height: 500px; }
 	
- 	.banner h1 { font-size: 2.2em }
+ 	.banner h1 { 
+     padding-top: 100px;
+     font-size: 2.2em }
 	
 	h2 { font-size: 1.5em; }
 	
@@ -696,12 +715,16 @@ form h2, form h3 {
 	.main-content {
 		width: 100%;
 		margin: auto;
-		max-width: 60em;
+		max-width: 80em;
 	}
 	
 	.section { padding-top: 80px; }
 
-	#about img { width: 220px; }
+	#diabetes img, #about img { width: 200px; }
+
+  .doctor { 
+    padding: 0px 40px; }
+  
 }
 
 /* ------------------------- END: MEDIA QUERIES ---------------------- */
