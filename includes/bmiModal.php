@@ -8,7 +8,6 @@
       <!-- Modal Header -->
       <div class="modal-header">
 		  
-        
 		  <h2>BMI Test</h2>
 		  <div class="w3-text-white">
 			  <button type="button" onclick="w3.hide('#risks'), w3.hide('.question'), w3.hide('#contact-form')" class="close" data-dismiss="modal" title="Close BMI test"><i class="fa fa-remove"></i></button>
@@ -21,7 +20,6 @@
 		<!--  * BMI Tool: id[bmi_tool]: Start *  -->
 		<form method="post" action="#" class="w3-form bmi-tool">
 
-		  
 		  <!-- Feildset : Start -->
 		  <fieldset id="bmi-container" class="w3-white w3-text-black">
 			<!-- Row -->
@@ -29,7 +27,7 @@
 			  
 			  <!-- Question 1 -->
 			  <div class="w3-animate-opacity question" id="question1">
-				<h2>Question 1</h2>
+				<h2 class="sr-only">Question 1</h2>
 				<h3>How old are you?</h3>
 
 				<div class="w3-col l12">
@@ -85,7 +83,7 @@
 
 			  <!-- Question 2 -->
 			  <div class="w3-animate-opacity question" id="question2">
-				<h2>Question 2</h2>
+				<h2 class="sr-only">Question 2</h2>
 				<h3>What is your BMI?</h3>
 
 				<div class="w3-col l12">
@@ -140,7 +138,7 @@
 
 			  <!-- Question 3 -->
 			  <div class="w3-animate-opacity question" id="question3">
-				<h2>Question 3</h2>
+				<h2 class="sr-only">Question 3</h2>
 				<h3>Does your family have diabetes?</h3>
 
 				<div class="w3-col l12">
@@ -195,7 +193,7 @@
 
 			  <!-- Question 4 -->
 			  <div class="w3-animate-opacity question" id="question4">
-				<h2>Question 4</h2>
+				<h2 class="sr-only">Question 4</h2>
 				<h3>Describe your diet</h3>
 
 				<div class="w3-col l12">
