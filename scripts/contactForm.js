@@ -67,10 +67,10 @@ $(document).ready(function() {
         // Return true
         // Title is arguement
         if((title == "Select your title") || (title == "0")) {
-			addError("#error-title", "* Title is required");
+			addError("#error-title", "Title is required");
             return false;
 		} else if (!title == "Mr" || !title == "Ms" || !title == "Mrs" || !title == "Miss" || !title == "Master") { // If title field does not have [string], display error message
-            addError("#error-title", "* Title is invalid");
+            addError("#error-title", "Title is invalid");
             return false;
         }  
         return true; }
@@ -83,7 +83,7 @@ $(document).ready(function() {
         // First name is arguement
         var fnameRegEx = /^[a-zA-Z]*$/; // Reg expression variable
         if((firstname == "First name") || (firstname == "")) {
-            addError("#error-fname", "* First name is required");
+            addError("#error-fname", "First name is required");
             return false;
         } 
         if (!fnameRegEx.test(firstname)) {
@@ -104,15 +104,15 @@ $(document).ready(function() {
         // Last name is arguement
         var lnameRegEx = /^[a-zA-Z \-?]*$/; // Regular expression
         if(lastname == "") {
-            addError("#error-lname", "* Last name is required");
+            addError("#error-lname", "Last name is required");
             return false;
         }
         if (!lnameRegEx.test(lastname)) {
-            addError("#error-lname", "* Must only contain letters");
+            addError("#error-lname", "Last name must only contain letters");
             return false;
         }
         if (lastname.length <= 2) {  // If first name field does match conditions
-            addError("#error-lname", "* Must be more than 2 letters");
+            addError("#error-lname", "Last name must be more than 2 letters");
             return false;
         }
         return true; }
@@ -125,11 +125,11 @@ $(document).ready(function() {
         // Health is arguement
         var healthRegEx = /^(ZHA)+[0-9]{6}/; // Create variable
         if((health == "ZHA health number") || (health === "")) {
-            addError("#error-health", "* Health is required");
+            addError("#error-health", "Health number is required");
             return false; // Set allowsubmit t0 false
         } else {
             if ((!healthRegEx.test(health)) || (health.length != 9 )) { // ---- If health field does NOT match conditions
-            addError("#error-health", "* Must have uppercase ZHA and be 6 digits");
+            addError("#error-health", "Health number must have 'ZHA' prefix and 6 digits");
             return false; // Set allowsubmit t0 false
             } 
         }
@@ -145,11 +145,11 @@ $(document).ready(function() {
         // Regular expression taken from http://regexlib.com/(X(1)A(I4oK6w1K52I4A2siAA4rLdlVoJJWbFtj22zxZ7RNarY5l1m7szlB9lt1ufxMvMZtcgBvOlD4xiQ-ZEqnoaRBtd4Z9ZtGtlUsY_rTfAc1mx1EbNkQwpKdco32eq5fk-Yem9xsdX6dLUGCEUIfVj9Fi1dQFbnhrZMZLLrg1O-QbnqZfy5FBJKo3baZFFgCM7ia0))/Search.aspx?k=uk+telephone&c=-1&m=-1&ps=20 / Autor: Rob Collyer (Code modified to make spaces number optional)
         var emailRegEx = /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;    // ------ Create regular expression
         if(email == "") {
-            addError("#error-email", "* Email is required");
+            addError("#error-email", "Email is required");
             return false; // Set allowsubmit t0 false
         } else {
             if (!emailRegEx.test(email)) { // If email field does NOT match regular expression
-            addError("#error-email", "* Must be a valid email address");
+            addError("#error-email", "Email must be a valid email address");
             return false; // Set allowsubmit to false
             }   
         }
@@ -165,7 +165,7 @@ $(document).ready(function() {
         // Regular expression taken from http://regexlib.com/(X(1)A(I4oK6w1K52I4A2siAA4rLdlVoJJWbFtj22zxZ7RNarY5l1m7szlB9lt1ufxMvMZtcgBvOlD4xiQ-ZEqnoaRBtd4Z9ZtGtlUsY_rTfAc1mx1EbNkQwpKdco32eq5fk-Yem9xsdX6dLUGCEUIfVj9Fi1dQFbnhrZMZLLrg1O-QbnqZfy5FBJKo3baZFFgCM7ia0))/Search.aspx?k=uk+telephone&c=-1&m=-1&ps=20 / Autor: Rob Collyer (Code modified to make spaces number optional)
         var teleRegEx = /^(0[1-9]\d{1}\s?\d{4}\s?\d{4}$)|(^0[1-9]\d{2}\s?\d{3}\s?\d{4}$)|(^0[1-9]\d{2}\s\d{4}\s?\d{3}$)|(^0[1-9]\d{3}\s\d{3}\s?\d{2}$)|(^0[1-9]\d{3}\s\d{3}\s?\d{3}$)|(^0[1-9]\d{4}\s?\d{3}\s?\d{2}$)|(^0[1-9]\d{4}\s?\d{2}\s?\d{3}$)|(^0[1-9]\d{4}\s?\d{2}\s?\d{2}$)/;   // Create variable:[teleRegEx] and store:[regular Expression
         if((telephone != "") && (!teleRegEx.test(telephone))) { // If telephone field does NOT match regular expression
-            addError("#error-contact", "* Must be a valid 11 digit number");
+            addError("#error-contact", "Contact must be a valid 11 digit number");
             return false; // Set allowsubmit to false
         }
         return true; }
@@ -304,9 +304,6 @@ $(document).ready(function() {
             } else { // Else  
                 showError($("#error-contact")); // Show error
 				borderRed(contact);
-            }
-        } else { // Else
-            if($(this).val() = "") { // If contact field value is empty
                 validcontact = true; // Set boolean
             }
         }
@@ -327,7 +324,7 @@ $(document).ready(function() {
 	}
 	
 	function assignLocation() {
-		window.location.assign("index.html");
+		window.location.assign("index.php");
 	}
 
     // ...................................... * Submit Form * ............................... 
@@ -394,9 +391,9 @@ $(document).ready(function() {
 
 		var check = checkErrors(validtitle, validfname, validlname, validhealth, validemail, validcontact); // Variable call to check errors
 		if(check) { // If check 
-        	$("#submitConfirm").show();
+        	
 			// var submitTimer = setTimeout(submitForm, 800);
-			var setLocation = setTimeout(assignLocation, 1500);
+            $("form").submit()
 			
         }
         event.preventDefault(); // Prevent submit
