@@ -8,8 +8,8 @@
 <meta name="keywords" content="Diabetes Management, Diabetes Care, Health Tips, Diabetes Prevention, Blood Sugar Control, Diabetes Support, Healthy Lifestyle, Diabetes Education, Type 2 Diabetes, Health and Wellness" />
 <meta name="author" content="Leroy Russell">
 
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logo/logo.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/logo/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo/logo.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo/apple-touch-icon.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,233 +19,230 @@
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-
-
-
-<!-- ---------- Navbar ---------- -->
-<nav class="navbar site-nav py-3">
-  <div class="wrap w-100 d-flex align-items-center">
-    <a class="brand text-decoration-none me-auto" href="#top">Zedland <span>Health</span></a>
-
-    <!-- Inline links, desktop only -->
-    <ul class="navbar-nav flex-row gap-lg-1 d-none d-lg-flex">
-      <li class="nav-item"><a class="nav-link active" href="#top">Home</a></li>
-      <li class="nav-item"><a class="nav-link" href="#about">What is Diabetes</a></li>
-      <li class="nav-item"><a class="nav-link" href="#types">Types of Diabetes</a></li>
-      <li class="nav-item"><a class="nav-link" href="#health">Good Health</a></li>
-      <li class="nav-item"><a class="nav-link" href="#doctors">What Doctors Say</a></li>
-    </ul>
-
-    <!-- Sidenav trigger, mobile/tablet only -->
-    <button class="nav-toggle d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidenav" aria-controls="sidenav" aria-label="Open navigation menu">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-    </button>
-  </div>
-</nav>
-
-<!-- ---------- Sidenav (mobile/tablet) ---------- -->
-<div class="offcanvas offcanvas-end sidenav" tabindex="-1" id="sidenav" aria-labelledby="sidenavLabel">
-  <div class="offcanvas-header">
-    <span class="brand" id="sidenavLabel">Zedland <span>Health</span></span>
-    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <ul class="sidenav-links">
-      <li><a href="#top">Home</a></li>
-      <li><a href="#about">What is Diabetes</a></li>
-      <li><a href="#types">Types of Diabetes</a></li>
-      <li><a href="#health">Good Health</a></li>
-      <li><a href="#doctors">What Doctors Say</a></li>
-    </ul>
-    <button type="button" class="btn-risk mt-4 w-100 justify-content-center" data-bs-dismiss="offcanvas" data-bs-toggle="modal" data-bs-target="#riskModal">
-      Start BMI test
-    </button>
-  </div>
-</div>
-
-<main id="top">
-
-  <!-- ---------- Hero ---------- -->
-  <section class="hero">
-    <div class="wrap">
-      <div>
-        <p class="eyebrow" style="color:#A9E0C6;">
-          <span style="background:#A9E0C6;width:18px;height:2px;display:inline-block;"></span>
-          Zedland Health Authority
-        </p>
-        <h1>Do you have <em>diabetes?</em></h1>
-        <p class="lede">Your Body Mass Index is one of the simplest early signals of risk. Answer two questions and see where you stand — it takes under a minute.</p>
-        <button type="button" class="btn-risk" data-bs-toggle="modal" data-bs-target="#riskModal">
-          Start BMI test
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </button>
-      </div>
-      <div class="pulse-wrap" aria-hidden="true">
-        <svg class="pulse-line" viewBox="0 0 400 160" fill="none">
-          <path d="M0 80 H120 L140 30 L165 130 L190 60 L210 100 L230 80 H400" class="pulse-path" stroke="#A9E0C6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
+    
+  <!-- ---------- Navbar ---------- -->
+  <nav class="navbar site-nav py-3">
+    <div class="wrap w-100 d-flex align-items-center">
+      <a class="brand text-decoration-none me-auto" href="#top">Zedland <span>Health</span></a>
+  
+      <!-- Inline links, desktop only -->
+      <ul class="navbar-nav flex-row gap-lg-1 d-none d-lg-flex">
+        <li class="nav-item"><a class="nav-link active" href="#top">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">What is Diabetes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#types">Types of Diabetes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#health">Good Health</a></li>
+        <li class="nav-item"><a class="nav-link" href="#doctors">What Doctors Say</a></li>
+      </ul>
+  
+      <!-- Sidenav trigger, mobile/tablet only -->
+      <button class="nav-toggle d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidenav" aria-controls="sidenav" aria-label="Open navigation menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
     </div>
-  </section>
-
-  <!-- ---------- About ---------- -->
-  <section id="about">
-    <div class="wrap">
-      <div class="card-panel about-panel">
+  </nav>
+  
+  <!-- ---------- Sidenav (mobile/tablet) ---------- -->
+  <div class="offcanvas offcanvas-end sidenav" tabindex="-1" id="sidenav" aria-labelledby="sidenavLabel">
+    <div class="offcanvas-header">
+      <span class="brand" id="sidenavLabel">Zedland <span>Health</span></span>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="sidenav-links">
+        <li><a href="#top">Home</a></li>
+        <li><a href="#about">What is Diabetes</a></li>
+        <li><a href="#types">Types of Diabetes</a></li>
+        <li><a href="#health">Good Health</a></li>
+        <li><a href="#doctors">What Doctors Say</a></li>
+      </ul>
+      <button type="button" class="btn-risk mt-4 w-100 justify-content-center" data-bs-dismiss="offcanvas" data-bs-toggle="modal" data-bs-target="#riskModal">
+        Start BMI test
+      </button>
+    </div>
+  </div>
+  
+  <main id="top">
+  
+    <!-- ---------- Hero ---------- -->
+    <section class="hero">
+      <div class="wrap">
         <div>
-          <p class="eyebrow">The condition</p>
-          <h2 class="h3 mb-3">What is diabetes?</h2>
-          <p style="color:var(--ink-soft);">Diabetes is a chronic condition where blood sugar levels remain elevated beyond normal range. It occurs when the body can't produce enough insulin, or can't use the insulin it produces effectively. Left unmanaged over time, it can lead to serious complications including heart disease, kidney failure, and nerve damage.</p>
+          <p class="eyebrow" style="color:#A9E0C6;">
+            <span style="background:#A9E0C6;width:18px;height:2px;display:inline-block;"></span>
+            Zedland Health Authority
+          </p>
+          <h1>Do you have <em>diabetes?</em></h1>
+          <p class="lede">Your Body Mass Index is one of the simplest early signals of risk. Answer two questions and see where you stand — it takes under a minute.</p>
+          <button type="button" class="btn-risk" data-bs-toggle="modal" data-bs-target="#riskModal">
+            Start BMI test
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
         </div>
-        <div class="d-flex flex-column gap-3">
-          <div class="stat-chip">
-            <span class="num">2</span>
-            <span class="label">Main types</span>
-          </div>
-          <div class="stat-chip">
-            <span class="num">&lt;1 min</span>
-            <span class="label">To check your risk</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ---------- Types ---------- -->
-  <section id="types" class="bg-alt">
-    <div class="wrap">
-      <p class="eyebrow">The types</p>
-      <h2 class="h3 mb-4">Type 1 and Type 2 diabetes</h2>
-      <div class="type-grid">
-        <div class="type-card">
-          <h3>Type 1 diabetes</h3>
-          <p>Typically diagnosed in children, teenagers, and young adults. The immune system mistakenly attacks the insulin-producing cells in the pancreas, making it impossible for the body to regulate blood sugar on its own. People living with Type 1 usually require daily insulin therapy and regular blood sugar monitoring.</p>
-        </div>
-        <div class="type-card type-2">
-          <h3>Type 2 diabetes</h3>
-          <p>The most common form, often diagnosed in adults over 40 — especially those who are overweight or inactive, though it's increasingly seen in younger people too. The body still produces insulin, but cells become resistant to it. Management usually includes lifestyle changes, medication, and sometimes insulin therapy.</p>
+        <div class="pulse-wrap" aria-hidden="true">
+          <svg class="pulse-line" viewBox="0 0 400 160" fill="none">
+            <path d="M0 80 H120 L140 30 L165 130 L190 60 L210 100 L230 80 H400" class="pulse-path" stroke="#A9E0C6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </div>
       </div>
-      <p class="mt-4 mb-0" style="color:var(--ink-soft); font-size:.95rem;">Both types require careful long-term management to prevent complications such as heart disease, kidney problems, and nerve damage. Early detection and ongoing care can greatly improve quality of life.</p>
-    </div>
-  </section>
-
-  <!-- ---------- Good health ---------- -->
-  <section id="health">
-    <div class="wrap">
-      <p class="eyebrow">Staying well</p>
-      <h2 class="h3 mb-4">Ways to good health</h2>
-      <div class="tip-grid">
-        <div class="tip-card">
-          <div class="tip-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9"/></svg></div>
-          <h4>Balanced diet</h4>
-          <p>Whole grains, fruit, vegetables and lean protein help regulate blood sugar and support overall health.</p>
-        </div>
-        <div class="tip-card">
-          <div class="tip-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h4l2-8 4 16 2-8h4"/></svg></div>
-          <h4>Regular activity</h4>
-          <p>Walking, cycling or swimming improves insulin sensitivity and lowers the risk of developing Type 2 diabetes.</p>
-        </div>
-        <div class="tip-card">
-          <div class="tip-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg></div>
-          <h4>Sleep and hydration</h4>
-          <p>Enough sleep and water intake plays a real role in regulating blood sugar and supporting the immune system.</p>
-        </div>
-        <div class="tip-card">
-          <div class="tip-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l2 8 4-16 2 8h6"/></svg></div>
-          <h4>Regular monitoring</h4>
-          <p>Checking blood sugar, managing stress and taking medication as prescribed improves long-term outcomes.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ---------- Doctors ---------- -->
-  <section id="doctors" class="bg-alt">
-    <div class="wrap">
-      <p class="eyebrow">Clinical voices</p>
-      <h2 class="h3 mb-4">What doctors say</h2>
-      <div class="quote-grid">
-        <div class="quote-card">
-          <div class="avatar-initial avatar-a">AP</div>
+    </section>
+  
+    <!-- ---------- About ---------- -->
+    <section id="about">
+      <div class="wrap">
+        <div class="card-panel about-panel">
           <div>
-            <blockquote>"A well-balanced diet is essential for preventing and managing diabetes. Focus on eating a variety of fresh, whole foods, and limit sugary snacks and refined carbohydrates."</blockquote>
-            <cite>Dr Patel</cite>
+            <p class="eyebrow">The condition</p>
+            <h2 class="h3 mb-3">What is diabetes?</h2>
+            <p style="color:var(--ink-soft);">Diabetes is a chronic condition where blood sugar levels remain elevated beyond normal range. It occurs when the body can't produce enough insulin, or can't use the insulin it produces effectively. Left unmanaged over time, it can lead to serious complications including heart disease, kidney failure, and nerve damage.</p>
+          </div>
+          <div class="d-flex flex-column gap-3">
+            <div class="stat-chip">
+              <span class="num">2</span>
+              <span class="label">Main types</span>
+            </div>
+            <div class="stat-chip">
+              <span class="num">&lt;1 min</span>
+              <span class="label">To check your risk</span>
+            </div>
           </div>
         </div>
-        <div class="quote-card">
-          <div class="avatar-initial avatar-b">RL</div>
+      </div>
+    </section>
+  
+    <!-- ---------- Types ---------- -->
+    <section id="types" class="bg-alt">
+      <div class="wrap">
+        <p class="eyebrow">The types</p>
+        <h2 class="h3 mb-4">Type 1 and Type 2 diabetes</h2>
+        <div class="type-grid">
+          <div class="type-card">
+            <h3>Type 1 diabetes</h3>
+            <p>Typically diagnosed in children, teenagers, and young adults. The immune system mistakenly attacks the insulin-producing cells in the pancreas, making it impossible for the body to regulate blood sugar on its own. People living with Type 1 usually require daily insulin therapy and regular blood sugar monitoring.</p>
+          </div>
+          <div class="type-card type-2">
+            <h3>Type 2 diabetes</h3>
+            <p>The most common form, often diagnosed in adults over 40 — especially those who are overweight or inactive, though it's increasingly seen in younger people too. The body still produces insulin, but cells become resistant to it. Management usually includes lifestyle changes, medication, and sometimes insulin therapy.</p>
+          </div>
+        </div>
+        <p class="mt-4 mb-0" style="color:var(--ink-soft); font-size:.95rem;">Both types require careful long-term management to prevent complications such as heart disease, kidney problems, and nerve damage. Early detection and ongoing care can greatly improve quality of life.</p>
+      </div>
+    </section>
+  
+    <!-- ---------- Good health ---------- -->
+    <section id="health">
+      <div class="wrap">
+        <p class="eyebrow">Staying well</p>
+        <h2 class="h3 mb-4">Ways to good health</h2>
+        <div class="tip-grid">
+          <div class="tip-card">
+            <div class="tip-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9"/></svg></div>
+            <h4>Balanced diet</h4>
+            <p>Whole grains, fruit, vegetables and lean protein help regulate blood sugar and support overall health.</p>
+          </div>
+          <div class="tip-card">
+            <div class="tip-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h4l2-8 4 16 2-8h4"/></svg></div>
+            <h4>Regular activity</h4>
+            <p>Walking, cycling or swimming improves insulin sensitivity and lowers the risk of developing Type 2 diabetes.</p>
+          </div>
+          <div class="tip-card">
+            <div class="tip-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg></div>
+            <h4>Sleep and hydration</h4>
+            <p>Enough sleep and water intake plays a real role in regulating blood sugar and supporting the immune system.</p>
+          </div>
+          <div class="tip-card">
+            <div class="tip-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l2 8 4-16 2 8h6"/></svg></div>
+            <h4>Regular monitoring</h4>
+            <p>Checking blood sugar, managing stress and taking medication as prescribed improves long-term outcomes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- ---------- Doctors ---------- -->
+    <section id="doctors" class="bg-alt">
+      <div class="wrap">
+        <p class="eyebrow">Clinical voices</p>
+        <h2 class="h3 mb-4">What doctors say</h2>
+        <div class="quote-grid">
+          <div class="quote-card">
+            <div class="avatar-initial avatar-a">AP</div>
+            <div>
+              <blockquote>"A well-balanced diet is essential for preventing and managing diabetes. Focus on eating a variety of fresh, whole foods, and limit sugary snacks and refined carbohydrates."</blockquote>
+              <cite>Dr Patel</cite>
+            </div>
+          </div>
+          <div class="quote-card">
+            <div class="avatar-initial avatar-b">RL</div>
+            <div>
+              <blockquote>"Diabetes management isn't just about diet and exercise — it's also about consistent monitoring and self-care. Check your blood sugar regularly, and if you have Type 1, never skip your insulin doses."</blockquote>
+              <cite>Dr Laing</cite>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  </main>
+  
+  <!-- ---------- Footer ---------- -->
+  <footer>
+    <div class="wrap">
+      <h3>Get connected</h3>
+      <div class="social">
+        <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-9h3l1-4h-4V7c0-1 .5-2 2-2h2V1h-3c-3 0-5 2-5 5v3H6v4h3v9h4Z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        <a href="#" aria-label="Twitter"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 5.9c-.7.3-1.5.6-2.3.7.8-.5 1.5-1.3 1.8-2.3-.8.5-1.6.8-2.6 1a4 4 0 0 0-6.9 3.7A11.5 11.5 0 0 1 3.5 4.6a4 4 0 0 0 1.3 5.4c-.7 0-1.3-.2-1.9-.5v.1a4 4 0 0 0 3.3 4 4 4 0 0 1-1.9.1 4 4 0 0 0 3.8 2.9A8 8 0 0 1 2 18.6a11.5 11.5 0 0 0 6.3 1.9c7.5 0 11.7-6.3 11.7-11.7v-.5c.8-.6 1.5-1.3 2-2.4Z"/></svg></a>
+      </div>
+      <p id="copyright">&copy; <span id="currentYear"></span> Zedland Health Authority — Diabetes information for public awareness.</p>
+    </div>
+  </footer>
+  
+  <!-- ---------- BMI Modal ---------- -->
+  <div class="modal fade bmi-modal" id="riskModal" tabindex="-1" aria-labelledby="riskModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
           <div>
-            <blockquote>"Diabetes management isn't just about diet and exercise — it's also about consistent monitoring and self-care. Check your blood sugar regularly, and if you have Type 1, never skip your insulin doses."</blockquote>
-            <cite>Dr Laing</cite>
+            <h2 class="modal-title h5 mb-1" id="riskModalLabel">Diabetes risk check</h2>
+            <p class="mb-0" style="font-size:.85rem; color:#D6E7E2;">Calculate your BMI and see where you stand.</p>
           </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<!-- ---------- Footer ---------- -->
-<footer>
-  <div class="wrap">
-    <h3>Get connected</h3>
-    <div class="social">
-      <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-9h3l1-4h-4V7c0-1 .5-2 2-2h2V1h-3c-3 0-5 2-5 5v3H6v4h3v9h4Z"/></svg></a>
-      <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
-      <a href="#" aria-label="Twitter"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 5.9c-.7.3-1.5.6-2.3.7.8-.5 1.5-1.3 1.8-2.3-.8.5-1.6.8-2.6 1a4 4 0 0 0-6.9 3.7A11.5 11.5 0 0 1 3.5 4.6a4 4 0 0 0 1.3 5.4c-.7 0-1.3-.2-1.9-.5v.1a4 4 0 0 0 3.3 4 4 4 0 0 1-1.9.1 4 4 0 0 0 3.8 2.9A8 8 0 0 1 2 18.6a11.5 11.5 0 0 0 6.3 1.9c7.5 0 11.7-6.3 11.7-11.7v-.5c.8-.6 1.5-1.3 2-2.4Z"/></svg></a>
-    </div>
-    <p id="copyright">&copy; <span id="currentYear"></span> Zedland Health Authority — Diabetes information for public awareness.</p>
-  </div>
-</footer>
-
-<!-- ---------- BMI Modal ---------- -->
-<div class="modal fade bmi-modal" id="riskModal" tabindex="-1" aria-labelledby="riskModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div>
-          <h2 class="modal-title h5 mb-1" id="riskModalLabel">Diabetes risk check</h2>
-          <p class="mb-0" style="font-size:.85rem; color:#D6E7E2;">Calculate your BMI and see where you stand.</p>
-        </div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-
-        <div class="mb-3">
-          <label for="height" class="form-label">Height (cm)</label>
-          <input type="number" id="height" class="form-control" placeholder="e.g. 175" required min="100" max="250" aria-describedby="height-error">
-          <div id="height-error" class="field-error"></div>
-        </div>
-
-        <div class="mb-4">
-          <label for="weight" class="form-label">Weight (kg)</label>
-          <input type="number" id="weight" class="form-control" placeholder="e.g. 70" required min="30" max="300" aria-describedby="weight-error">
-          <div id="weight-error" class="field-error"></div>
-        </div>
-
-        <button type="button" class="calculate-bmi">Calculate BMI</button>
-
-        <div id="result">
-          <div class="gauge-wrap">
-            <svg id="gauge" viewBox="0 0 200 118" width="100%">
-              <g id="gaugeBands"></g>
-              <line id="needle" x1="100" y1="100" x2="100" y2="28" stroke="#132A33" stroke-width="3" stroke-linecap="round" style="transform-origin:100px 100px; transform:rotate(-90deg); transition:transform .6s cubic-bezier(.34,1.4,.64,1);"/>
-              <circle cx="100" cy="100" r="6" fill="#132A33"/>
-            </svg>
+        <div class="modal-body">
+  
+          <div class="mb-3">
+            <label for="height" class="form-label">Height (cm)</label>
+            <input type="number" id="height" class="form-control" placeholder="e.g. 175" required min="100" max="250" aria-describedby="height-error">
+            <div id="height-error" class="field-error"></div>
           </div>
-          <div id="bmiOutput">0</div>
-          <div class="status-text" id="status"></div>
-          <div id="healthAdvice" style="display:none;"></div>
+  
+          <div class="mb-4">
+            <label for="weight" class="form-label">Weight (kg)</label>
+            <input type="number" id="weight" class="form-control" placeholder="e.g. 70" required min="30" max="300" aria-describedby="weight-error">
+            <div id="weight-error" class="field-error"></div>
+          </div>
+  
+          <button type="button" class="calculate-bmi">Calculate BMI</button>
+  
+          <div id="result">
+            <div class="gauge-wrap">
+              <svg id="gauge" viewBox="0 0 200 118" width="100%">
+                <g id="gaugeBands"></g>
+                <line id="needle" x1="100" y1="100" x2="100" y2="28" stroke="#132A33" stroke-width="3" stroke-linecap="round" style="transform-origin:100px 100px; transform:rotate(-90deg); transition:transform .6s cubic-bezier(.34,1.4,.64,1);"/>
+                <circle cx="100" cy="100" r="6" fill="#132A33"/>
+              </svg>
+            </div>
+            <div id="bmiOutput">0</div>
+            <div class="status-text" id="status"></div>
+            <div id="healthAdvice" style="display:none;"></div>
+          </div>
+  
         </div>
-
       </div>
     </div>
   </div>
-</div>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="/assets/js/main.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
